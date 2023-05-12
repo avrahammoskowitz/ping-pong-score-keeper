@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Score Keeper - Hami</title>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        <h1>Ping Pong Score Keeper</h1>
+        <h3>Score</h3>
+        <h2><span id="p1ScoreDisplay">0</span> to <span id="p2ScoreDisplay">0</span></h2>
+        <h3 style="margin-top: 0;">Rounds Won</h3>
+        <h2><span id="p1RoundsDisplay">0</span> - <span id="p2RoundsDisplay">0</span></h2>
+        <div id="gameSettingsSelect">
+            <label for="playTo">Playing to</label>
+            <input type="number" value="11" id="playTo" name="playTo" min="3" max="21">
+            <label for="bestOf">Best of</label>
+            <input type="number" value="3" id="bestOf" name="bestOf" min="3" max="9">
+        </div>
+        <p>
+            Win by two?
+            <input type="checkbox" name="winByTwo" id="winByTwo" checked>
+            
+        </p>
+        <button id="nextRoundBtn">Start Next Round</button>
+        <div class="btnContainer">
+            <button id="p1Btn">+1 Player One</button>
+            <button id="p2Btn">+1 Player Two</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
